@@ -30,7 +30,7 @@ Purple = [2, 0, 2]
 
 
 ## 显示黄色字体
-- [display_yellow_text](https://github.com/aJantes/rolling_text/blob/master/display_yellow_text.py)
+- [display_yellow_text.py](https://github.com/aJantes/rolling_text/blob/master/display_yellow_text.py)
 
 
 ![yellow](rollingText_album/yellow.gif)
