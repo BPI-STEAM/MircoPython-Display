@@ -97,7 +97,7 @@ display.show(Image.HAPPY)
 
 - 第二行就是指通过了 display 模块来显示内置的 Image 图片，展示的这个笑脸图案其实只是 Image 的一部分，而它的名字叫做 Happy，并且要通过 show 并将它放置在括弧内，以使得它显示出来，所以写成 `display.show(Image.HAPPY)`
 
-![emoj](showImage_album/emoj.jpg)
+![emoj](rollingText_album/emoj.jpg)
 
 #### 内置的图片列表如下
 
@@ -163,7 +163,7 @@ love = Image("01010:"
 display.show(love)
 ```
 
-![emoj2](showImage_album/emoj2.jpg)
+![emoj2](rollingText_album/emoj2.jpg)
 
 
 - 如果你能保证每一行不出错，也可以这样写
@@ -182,7 +182,7 @@ love = Image("01010:10101:01010:00100:00000")
 from microbit import *
 display.show(Image.ALL_CLOCKS, loop=True, delay=100)
 ```
-![emoj2](showImage_album/mycolor.gif)
+![emoj2](rollingText_album/mycolor.gif)
 
 ## 创造自己的动画
 - 结合上面所学的知识，做一个爱心下沉到底部的动画，并变颜色
@@ -231,7 +231,7 @@ display.show(all_loves, delay=500, loop=True,color=Red)
 ```
 
 
-![running](showImage_album/love.gif)
+![running](rollingText_album/love.gif)
 
 - `Red=(2, 0, 0)`定义颜色
 - 使用`Image()`创作出自己想要显示的图片，再通过list列表存储全部的图片，只要在`display.show()`导入列表便能显示出由一张张图片构成的动画
