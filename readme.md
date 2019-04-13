@@ -1,18 +1,9 @@
-# Document
+# LED矩阵上显示文字
+在板子显示想要的文字
 
 
+## 简单的显示文本
 
-## LED矩阵上显示文字
-首先要学习的是在板子显示想要的文字，例如"Hello,World!"
-
-
-### 示例代码
-```python
-from microbit import *
-display.scroll("Hello, World!")
-```
-- `from microbit import *` 是告诉MicroPython 获取所需要的组件或者模块，如果你之前接触过c语言，可以按照库来理解，所有模块是已经存在的代码库，这些库是从microbit中导入的。
-- `display.scroll("Hello, World!")` 告诉microPython使用display命令去滚动string的“Hello，World！”
 
 
 ## 字符颜色改变

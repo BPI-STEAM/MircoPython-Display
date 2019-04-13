@@ -38,4 +38,5 @@ love6 = Image("00000:"
               "00000")
 
 all_loves = [love1, love2, love3, love4, love5, love6]
-display.show(all_loves, delay=500, loop=True,color=Red)
+display.show(all_loves, delay=500, loop=True,color=Red) # 通过 `loop=True`，使Python 保持循环状态
+                                                        # `delay=100`设置这个动画切换图片的时间
