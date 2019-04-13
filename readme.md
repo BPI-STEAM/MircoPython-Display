@@ -1,10 +1,12 @@
 # LED矩阵上显示文字
-在板子显示想要的文字
+在[BPI:bit(ESP32)](https://github.com/aJantes/rolling_text/blob/master/introduce.md)显示想要的文字
 
 
 ## 简单的显示文本
 
 - [show_text.py](https://github.com/aJantes/rolling_text/blob/master/show_text.py)
+
+
 
 ## 字符颜色改变
  相比于microbit，bpibit的led面板采用的是可编程的RGB灯(ws2812b)
@@ -27,6 +29,7 @@ Indigo = [0, 2, 2]
 Purple = [2, 0, 2]
 ```
 分别是黑（灯熄灭，注意大小写）、红、橙、黄、绿、蓝、靛、紫。有了这几种基本的颜色就可以来修改我们的字体颜色
+
 
 
 ## 显示黄色字体
@@ -132,3 +135,4 @@ Purple = [2, 0, 2]
 1. 每个颜色的亮度都有0-255总共256个数值可以选择，所以最小就是[0 , 0 , 0],最大就是[255 ,255 , 255]
 2. 亮度一般不要调得太大，亮度太亮容易晃眼睛
 3. 如果要使用内置的颜色就要导入 display 模块，就可以使用了内置的颜色Red，所以在一开始就通过 from display import *  导入display模块
+
