@@ -1,6 +1,8 @@
 # Document
 - 前提准备：[第一次使用必看](https://github.com/aJantes/Initialize-the-board/blob/master/readme.md)
-- 硬件介绍：[BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)
+- 硬件介绍：
+1. [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)
+  2. [LED灯WS2812B](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
 - 编程工具：[pycharm](https://github.com/aJantes/use-pycharm/blob/master/readme.md)
 ## LED矩阵上显示文字
 在BPI:bit(ESP32)显示想要的文字
@@ -14,9 +16,6 @@
 
 ### 字符颜色改变
  相比于microbit，bpibit的led面板采用的是可编程的RGB灯(ws2812b)
- [点击查看WS2812B更详细的信息](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
- ![ws2812](rollingText_album/ws2812.png)
-
 这种RGB灯通过编程理论上可以显示255 *255 *255种颜色，也就是1600万种颜色
 
 
