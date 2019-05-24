@@ -1,5 +1,6 @@
 # mircopython - Led
 #### 📖 [English document]() 
+![](https://upload-images.jianshu.io/upload_images/17025158-d7bb53762074315b.gif?imageMogr2/auto-orient/strip)
 > 前提准备：[第一次使用必看](https://github.com/aJantes/Initialize-the-board/blob/master/readme.md)
 
 > 硬件介绍：
