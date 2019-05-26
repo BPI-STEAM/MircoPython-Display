@@ -2,7 +2,7 @@
 #### 📖 [English document](https://github.com/aJantes/rolling_text/blob/master/english_document.md)
 ![](rollingText_album/bit.gif)
 > 硬件介绍：
-
+？？
 - [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)   
 - [LED灯WS2812B](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
 
