@@ -1,27 +1,22 @@
 # mircopython - Led
-#### [English document]() 
-- 前提准备：[第一次使用必看](https://github.com/aJantes/Initialize-the-board/blob/master/readme.md)
-- 硬件介绍：
-1. [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)
-  2. [LED灯WS2812B](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
-- 编程工具：[pycharm](https://github.com/aJantes/use-pycharm/blob/master/readme.md)
-## LED矩阵上显示文字
-在BPI:bit(ESP32)显示想要的文字
+#### 📖 [English document]() 
+> 前提准备：[第一次使用必看](https://github.com/aJantes/Initialize-the-board/blob/master/readme.md)
 
+> 硬件介绍：
 
-### 简单的显示文本
+- [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)   
+- [LED灯WS2812B](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
 
-- [show_text.py](https://github.com/aJantes/rolling_text/blob/master/show_text.py)
+> 编程工具：[pycharm](https://github.com/aJantes/use-pycharm/blob/master/readme.md)
 
 
 
-### 字符颜色改变
- 相比于microbit，bpibit的led面板采用的是可编程的RGB灯(ws2812b)
-这种RGB灯通过编程理论上可以显示255 *255 *255种颜色，也就是1600万种颜色
+# LED矩阵显示
+LED矩阵 硬件相关函数 [display 模块](https://github.com/BPI-STEAM/MicroPython-Samples/blob/master/10.microbit/display.py)。在调用相关函数前，需要先导入对应的库。
+    
 
-
-想要改变字体的颜色是很简单的，在我们的固件中预置了8种颜色
-
+## **显示滚动文本**
+**bpi：bit** 的 led面板 采用的是可编程的 RGB灯(ws2812b)，这种 RGB灯 通过编程理论上可以显示255 *255 *255种颜色，也就是1600万种颜色。下面是在固件中预置的8种颜色
 ```Python
 black = [0, 0, 0]   
 Red = [2, 0, 0]
@@ -32,111 +27,41 @@ Blue = [0, 0, 2]
 Indigo = [0, 2, 2]
 Purple = [2, 0, 2]
 ```
-分别是黑（灯熄灭，注意大小写）、红、橙、黄、绿、蓝、靛、紫。有了这几种基本的颜色就可以来修改我们的字体颜色
-
-
-
-### 显示黄色字体
-- [display_yellow_text.py](https://github.com/aJantes/rolling_text/blob/master/display_yellow_text.py)
-
-
-![yellow](rollingText_album/yellow.gif)
-
-### 显示多色字体
-- [display_color_text.py](https://github.com/aJantes/rolling_text/blob/master/display_color_text.py)
-
-![color](rollingText_album/color.gif)
-
-### 自定义颜色
-  
-- [display_custom_color.py](https://github.com/aJantes/rolling_text/blob/master/display_custom_color.py)
-
 如果想要了解更多RGB颜色， [请点击查看RGB颜色查询对照表](http://tool.oschina.net/commons?type=3)
+## 主要函数 
+
+- `display.scroll(val, color=Red, delay=150)`：
+
+`val` 为想要传进去的字符串; `color` 为需要显示的颜色; `delay` 为led灯滚动的时间间隔。
+
+例如 `display.scroll("Hello World!",color=Yellow,delay=200)` 在led矩阵滚动显示黄色的"Hello World!" 字符串，滚动的时间间隔为 200 ms。
 
 
 
-![mycolor](rollingText_album/mycolor.gif)
+
+## **面板显示图像**
+
+图像的显示是由于led矩阵上每个led灯的亮灭、颜色、亮度等状态不同而形成的。只要控制不同led灯的状态，就能形成想要的图像。图像是由一个列表组成，在列表中按led灯排列顺序分别赋值1（亮）或者0（暗），从而显示图像。在 [display 模块](https://github.com/BPI-STEAM/MicroPython-Samples/blob/master/10.microbit/display.py) 中已经配置好一些图片。只需要调用即可显示。
+
+## 主要函数
+- `display.show(images, loop, delay)`:
+
+`images` 为需要显示的列表; `loop`通过写入 `True` 或者 `False` ,使得动画是否循环;    `delay` 为led灯变化的时间间隔。
+
+函数按照填入的列表显示出相应的图像。
+
+例如 `display.show(Image.ALL_CLOCKS, loop=True, delay=100)`  在led矩阵通过led的亮灭显示出时钟。时钟循环播放，每次的变化间隔为 100 ms。
 
 
-### 面板显示图像
+---
 
-
-- [show_image.py](https://github.com/aJantes/rolling_text/blob/master/show_image.py)
-
-![emoj](rollingText_album/emoj.jpg)
-
-### 内置的图片列表如下
-
-- Image.HEART
-- Image.HEART_SMALL
-- Image.HAPPY
-- Image.SMILE
-- Image.SAD
-- Image.CONFUSED
-- Image.ANGRY
-- Image.ASLEEP
-- Image.SURPRISED
-- Image.SILLY
-- Image.FABULOUS
-- Image.MEH
-- Image.YES
-- Image.NO
-- Image.CLOCK12, Image.CLOCK11, Image.CLOCK10, Image.CLOCK9, Image.CLOCK8, Image.CLOCK7, Image.CLOCK6, Image.CLOCK5, Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1
-- Image.ARROW_N, Image.ARROW_NE, Image.ARROW_E, Image.ARROW_SE, Image.ARROW_S, Image.ARROW_SW, Image.ARROW_W, Image.ARROW_NW
-- Image.TRIANGLE
-- Image.TRIANGLE_LEFT
-- Image.CHESSBOARD
-- Image.DIAMOND
-- Image.DIAMOND_SMALL
-- Image.SQUARE
-- Image.SQUARE_SMALL
-- Image.RABBIT
-- Image.COW
-- Image.MUSIC_CROTCHET
-- Image.MUSIC_QUAVER
-- Image.MUSIC_QUAVERS
-- Image.PITCHFORK
-- Image.XMAS
-- Image.PACMAN
-- Image.TARGET
-- Image.TSHIRT
-- Image.ROLLERSKATE
-- Image.DUCK
-- Image.HOUSE
-- Image.TORTOISE
-- Image.BUTTERFLY
-- Image.STICKFIGURE
-- Image.GHOST
-- Image.SWORD
-- Image.GIRAFFE
-- Image.SKULL
-- Image.UMBRELLA
-- Image.SNAKE
-
-### 创造自己的图片
-
-在每一个 LED 在物理显示上可以被设置为一个值，类似于高低电平，比如某个像素点被设置成 0 ，那么它的亮度就是 0 .然而如果它被设置成 1，那么它就是指灯的亮度为 1 。利用led的亮与灭，很容易的创造一个想要的新图片
-- [show_my_image.py](https://github.com/aJantes/rolling_text/blob/master/show_my_image.py)
-
-![emoj2](rollingText_album/emoj2.jpg)
-
-
-
-### 如何制作一个简单的动画
-
-- [show_clock.py](https://github.com/aJantes/rolling_text/blob/master/show_clock.py)
-
-![emoj2](rollingText_album/mycolor.gif)
-
-### 创造自己的动画
-- [show_animation.py](https://github.com/aJantes/rolling_text/blob/master/show_animation.py)
-
-![running](rollingText_album/love.gif)
-
-
-#### 下面有几个注意点
-
-1. 每个颜色的亮度都有0-255总共256个数值可以选择，所以最小就是[0 , 0 , 0],最大就是[255 ,255 , 255]
-2. 亮度一般不要调得太大，亮度太亮容易晃眼睛
-3. 如果要使用内置的颜色就要导入 display 模块，就可以使用了内置的颜色Red，所以在一开始就通过 from display import *  导入display模块
+## **led矩阵例子**
+1. [show_text.py](https://github.com/aJantes/rolling_text/blob/master/show_text.py)   显示简单文本
+2. [display_yellow_text.py](https://github.com/aJantes/rolling_text/blob/master/display_yellow_text.py)   显示黄色文本
+3. [display_color_text.py](https://github.com/aJantes/rolling_text/blob/master/display_color_text.py)  显示多色文本
+4. [display_custom_color.py](https://github.com/aJantes/rolling_text/blob/master/display_custom_color.py)  显示自定义颜色文本
+5. [show_image.py](https://github.com/aJantes/rolling_text/blob/master/show_image.py)  显示内置图像
+6. [show_my_image.py](https://github.com/aJantes/rolling_text/blob/master/show_my_image.py)  显示自定义图像
+7. [show_clock.py](https://github.com/aJantes/rolling_text/blob/master/show_clock.py)  显示内置动画
+8. [show_animation.py](https://github.com/aJantes/rolling_text/blob/master/show_animation.py)  显示自定义动画
 
