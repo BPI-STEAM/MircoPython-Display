@@ -7,7 +7,7 @@
 - [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)   
 - [LED(WS2812B)](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
 
-> Programming tools：[pycharm](https://github.com/aJantes/use-pycharm/blob/master/readme.md)
+
 
 # LED Matrix Display
 LED Matrix Hardware correlation function [display Modular](https://github.com/BPI-STEAM/MicroPython-Samples/blob/master/10.microbit/display.py). Before calling related functions, you need to import the corresponding libraries.

@@ -6,7 +6,7 @@
 - [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/readme.md)   
 - [LED灯WS2812B](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/WS2812B.pdf)
 
-> 编程工具：[pycharm](https://github.com/aJantes/use-pycharm/blob/master/readme.md)
+
 
 
 
