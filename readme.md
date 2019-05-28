@@ -40,7 +40,7 @@ bpi：bit 的 led 面板 采用的是可编程的 RGB灯(ws2812b)，这种 RGB�
 
 ---
 
-## **led矩阵例子**
+## led矩阵例子
 1. [show_text.py](https://github.com/aJantes/MircoPython-led/blob/master/example/show_text.py)   -显示简单文本
 2. [display_yellow_text.py](https://github.com/aJantes/MircoPython-led/blob/master/example/display_yellow_text.py)   -显示黄色文本
 3. [display_color_text.py](https://github.com/aJantes/MircoPython-led/blob/master/example/display_color_text.py)  -显示多色文本

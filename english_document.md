@@ -40,7 +40,7 @@ For example: `display.show(Image.ALL_CLOCKS, loop=True, delay=100)`  In the LED 
 
 ---
 
-## **Example**
+## Example
 
 1. [show_text.py](https://github.com/aJantes/MircoPython-led/blob/master/example/show_text.py)   -Display simple text
 2. [display_yellow_text.py](https://github.com/aJantes/MircoPython-led/blob/master/example/display_yellow_text.py)   -Show Simple Text Show Yellow Text
