@@ -14,7 +14,7 @@ LED Matrix Hardware correlation function [display Modular](https://github.com/BP
     
 ## **Display scrolling text**
 
-The LED panel of ** bpi: bit ** uses programmable RGB lamp (ws2812b), which can theoretically display 255 * 255 * 255 * 255 colors, or 16 million colors, by programming.
+The LED panel of  bpi: bit  uses programmable RGB lamp (ws2812b), which can theoretically display 255 * 255 * 255 * 255 colors, or 16 million colors, by programming.
 ## Main functions 
 
 - `display.scroll(val, color=Red, delay=150)`：
@@ -41,12 +41,12 @@ For example: `display.show(Image.ALL_CLOCKS, loop=True, delay=100)`  In the LED 
 ---
 
 ## **Example**
-1. [show_text.py](https://github.com/aJantes/rolling_text/example/blob/master/show_text.py)   -Display simple text
-2. [display_yellow_text.py](https://github.com/aJantes/rolling_text/example/blob/master/display_yellow_text.py)   -Show Simple Text Show Yellow Text
-3. [display_color_text.py](https://github.com/aJantes/rolling_text/example/blob/master/display_color_text.py)  -Display multicolor text
-4. [display_custom_color.py](https://github.com/aJantes/rolling_text/example/blob/master/display_custom_color.py)  -Display multicolor text to display custom color text
-5. [show_image.py](https://github.com/aJantes/rolling_text/example/blob/master/show_image.py)  -Display built-in images
-6. [show_my_image.py](https://github.com/aJantes/rolling_text/example/blob/master/show_my_image.py)  -Display custom images
-7. [show_clock.py](https://github.com/aJantes/rolling_text/example/blob/master/show_clock.py)  -Display built-in animation
-8. [show_animation.py](https://github.com/aJantes/rolling_text/example/blob/master/show_animation.py)  -Display custom animation
+1. [show_text.py](https://github.com/aJantes/MicroPython-led/example/blob/master/show_text.py)   -Display simple text
+2. [display_yellow_text.py](https://github.com/aJantes/MicroPython-led/example/blob/master/display_yellow_text.py)   -Show Simple Text Show Yellow Text
+3. [display_color_text.py](https://github.com/aJantes/MicroPython-led/example/blob/master/display_color_text.py)  -Display multicolor text
+4. [display_custom_color.py](https://github.com/aJantes/MicroPython-led/example/blob/master/display_custom_color.py)  -Display multicolor text to display custom color text
+5. [show_image.py](https://github.com/aJantes/MicroPython-led/example/blob/master/show_image.py)  -Display built-in images
+6. [show_my_image.py](https://github.com/aJantes/MicroPython-led/example/blob/master/show_my_image.py)  -Display custom images
+7. [show_clock.py](https://github.com/aJantes/MicroPython-led/example/blob/master/show_clock.py)  -Display built-in animation
+8. [show_animation.py](https://github.com/aJantes/MicroPython-led/example/blob/master/show_animation.py)  -Display custom animation
 

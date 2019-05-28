@@ -1,5 +1,5 @@
 # mircopython - Led
-#### 📖 [English document](https://github.com/aJantes/rolling_text/blob/master/english_document.md)
+#### 📖 [English document](https://github.com/aJantes/MircoPython-led/blob/master/english_document.md)
 ![](album/bit.gif)
 > 硬件介绍：
 
@@ -11,11 +11,11 @@
 
 
 # LED矩阵显示
-LED矩阵 硬件相关函数 [display 模块](https://github.com/BPI-STEAM/MicroPython-Samples/blob/master/10.microbit/display.py)。在调用相关函数前，需要先导入对应的库。
+LED矩阵 硬件相关函数 [display 模块](https://github.com/aJantes/MicroPython-led/blob/master/source/display.py)。在调用相关函数前，需要先导入对应的库。
     
 
 ## **显示滚动文本**
-**bpi：bit** 的 led面板 采用的是可编程的 RGB灯(ws2812b)，这种 RGB灯 通过编程理论上可以显示255 *255 *255种颜色，也就是1600万种颜色
+bpi：bit 的 led 面板 采用的是可编程的 RGB灯(ws2812b)，这种 RGB灯 通过编程理论上可以显示255 *255 *255种颜色，也就是1600万种颜色
 ## 主要函数 
 
 - `display.scroll(val, color=Red, delay=150)`：
@@ -41,12 +41,12 @@ LED矩阵 硬件相关函数 [display 模块](https://github.com/BPI-STEAM/Micro
 ---
 
 ## **led矩阵例子**
-1. [show_text.py](https://github.com/aJantes/rolling_text/blob/master/show_text.py)   -显示简单文本
-2. [display_yellow_text.py](https://github.com/aJantes/rolling_text/blob/master/display_yellow_text.py)   -显示黄色文本
-3. [display_color_text.py](https://github.com/aJantes/rolling_text/blob/master/display_color_text.py)  -显示多色文本
-4. [display_custom_color.py](https://github.com/aJantes/rolling_text/blob/master/display_custom_color.py)  -显示自定义颜色文本
-5. [show_image.py](https://github.com/aJantes/rolling_text/blob/master/show_image.py)  -显示内置图像
-6. [show_my_image.py](https://github.com/aJantes/rolling_text/blob/master/show_my_image.py)  -显示自定义图像
-7. [show_clock.py](https://github.com/aJantes/rolling_text/blob/master/show_clock.py)  -显示内置动画
-8. [show_animation.py](https://github.com/aJantes/rolling_text/blob/master/show_animation.py)  -显示自定义动画
+1. [show_text.py](https://github.com/aJantes/MicroPython-led/blob/master/show_text.py)   -显示简单文本
+2. [display_yellow_text.py](https://github.com/aJantes/MicroPython-led/blob/master/display_yellow_text.py)   -显示黄色文本
+3. [display_color_text.py](https://github.com/aJantes/MicroPython-led/blob/master/display_color_text.py)  -显示多色文本
+4. [display_custom_color.py](https://github.com/aJantes/MicroPython-led/blob/master/display_custom_color.py)  -显示自定义颜色文本
+5. [show_image.py](https://github.com/aJantes/MicroPython-led/blob/master/show_image.py)  -显示内置图像
+6. [show_my_image.py](https://github.com/aJantes/MicroPython-led/blob/master/show_my_image.py)  -显示自定义图像
+7. [show_clock.py](https://github.com/aJantes/MicroPython-led/blob/master/show_clock.py)  -显示内置动画
+8. [show_animation.py](https://github.com/aJantes/MicroPython-led/blob/master/show_animation.py)  -显示自定义动画
 
