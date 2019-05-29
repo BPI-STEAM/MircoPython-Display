@@ -1,23 +1,23 @@
-# MircoPython - Display
+# &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MircoPython - Display
 #### 📖 [English document](https://github.com/aJantes/MircoPython-led/blob/master/english_document.md)
-> 硬件介绍：
+> 模块介绍：
 
 - [BPI:bit(ESP32)](https://github.com/aJantes/introduce-bpi-bit/blob/master/README.md)   
 - [LED灯(WS2812B)](https://github.com/aJantes/MircoPython-led/blob/master/source/WS2812B.pdf)
 
 
-# LED矩阵显示
-LED矩阵 硬件相关函数 [display 模块](https://github.com/aJantes/MircoPython-led/blob/master/source/display.py)。在调用相关函数前，需要先导入对应的库。
+# LED 矩阵显示
+LED 矩阵 硬件相关函数 [display 模块](https://github.com/aJantes/MircoPython-led/blob/master/source/display.py)。在调用相关函数前，需要先导入对应的库。
     
 ## 主要函数 
 
 - `display.scroll("Hello World!", color=Red, delay=150)`：
 
-在led矩阵滚动显示红色色的 "Hello World!"  字符串，滚动的时间间隔为 150 ms。
+在 led 矩阵滚动显示红色色的 "Hello World!"  字符串，滚动的时间间隔为 150 ms。
 
 - `display.show(Image.ALL_CLOCKS, loop=True, delay=100)` :
 
-在led矩阵通过led的亮灭显示出时钟。时钟循环播放，每次的变化间隔为 100 ms。
+在 led 矩阵通过led的亮灭显示出时钟。时钟循环播放，每次的变化间隔为 100 ms。
 
 
 ---
