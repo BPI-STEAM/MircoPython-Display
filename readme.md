@@ -16,15 +16,9 @@ LED 矩阵 硬件相关函数 [display 模块](https://github.com/aJantes/MircoP
 Usage
 
 ``` python
-from ws2812 import WS2812
-chain = WS2812(spi_bus=1, led_count=4)
-data = [
-    (255, 0, 0),    # red
-    (0, 255, 0),    # green
-    (0, 0, 255),    # blue
-    (85, 85, 85),   # white
-]
-chain.show(data)
+import display
+display.scroll("Hello World!", color=Red, delay=150)
+
 ```
 
 ## 主要函数 
