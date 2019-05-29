@@ -13,11 +13,20 @@
 # LED 矩阵显示
 LED 矩阵 硬件相关函数 [display 模块](https://github.com/aJantes/MircoPython-led/blob/master/source/display.py)。在调用相关函数前，需要先导入对应的库。
 
-Usage
+
+``` python
+
+import display
+display = display.display()
+
+display.scroll("Hello World!", color=Red, delay=150)
+
+```
 
 ``` python
 import display
-display.scroll("Hello World!", color=Red, delay=150)
+
+display().scroll("Hello World!", color=Red, delay=150)
 
 ```
 
