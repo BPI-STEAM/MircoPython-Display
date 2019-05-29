@@ -1,6 +1,6 @@
-# mircopython - Led
+# MicroPython - Display 
 #### 📖 [中文文档](https://github.com/aJantes/rolling_text/blob/master/readme.md)
-![](album/bit.gif)
+
 
 > Hardware introduction：
 
