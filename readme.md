@@ -2,7 +2,7 @@
 
 #### 📖 [English document](https://github.com/aJantes/MircoPython-led/blob/master/english_document.md)
 
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)
 
 > 模块介绍：
 
